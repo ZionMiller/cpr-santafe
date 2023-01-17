@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const calendar = () => {
   return (
     <div className="container mx-auto mt-10">
-    <div className="wrapper bg-white rounded shadow w-full ">
+    <div className="wrapper bg-black rounded shadow w-full ">
       <div className="header flex justify-between border-b p-2">
           <span className="bg-red-500 rounded-full text-white px-3 py-1 text-xs uppercase font-medium">PDUFA</span>
           <span className="bg-yellow-500 rounded-full text-white px-3 py-1 text-xs uppercase font-medium">Data Readout</span>
