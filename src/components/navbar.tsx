@@ -8,7 +8,7 @@ const navbar = () => {
       <header className="bg-white dark:bg-gray-900 text-white shadow-lg hidden md:block">
         <div className="container mx-auto flex items-center h-24">
           <Link href="/" className="flex items-center justify-center">
-            <img className="h-16" src="./images/cpr-santafe-logo.png" alt="" />
+            <img className="h-24" src="./images/cpr-santafe-logo.png" alt="" />
           </Link>
           <nav className="contents font-semibold text-base lg:text-lg">
             <ul className="mx-auto flex items-center">
