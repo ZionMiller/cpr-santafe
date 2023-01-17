@@ -66,16 +66,18 @@ const footer = () => {
                         <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Maps widget</a>
                     </div>
                     <div>
-                        <h3 className="text-gray-700 uppercase dark:text-white">Products</h3>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Mega cloud</a>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Aperion UI</a>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Meraki UI</a>
+                        <h3 className="text-gray-700 uppercase dark:text-white">Menu</h3>
+                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Home</a>
+                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">About</a>
+                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Classes</a>
+                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Store</a>
                     </div>
 
                     <div>
                         <h3 className="text-gray-700 uppercase dark:text-white">Contact</h3>
-                        <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+1 526 654 8965</span>
-                        <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">example@email.com</span>
+                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Privacy Policy</a>
+                        <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+1 505-795-5927</span>
+                        <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Save1HeartCPR@gmail.com</span>
                     </div>
                 </div>
             </div>

@@ -10,8 +10,8 @@ const contact = () => {
                 <h1 className="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-4xl">Let’s talk</h1>
 
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                    Ask us everything and we would love
-                    to hear from you
+                    We would love
+                    to hear from you!
                 </p>
 
                 <form className="mt-12">
@@ -39,7 +39,7 @@ const contact = () => {
             </div>
 
             <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
-                <img className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+                <img className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="./images/cpr-pic.png" alt="" />
 
                 <div className="mt-6 space-y-8 md:mt-8">
                     <p className="flex items-start -mx-2">
@@ -49,8 +49,7 @@ const contact = () => {
                         </svg>
 
                         <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
-                            Cecilia Chapman 711-2880 Nulla
-                            St. Mankato Mississippi 96522
+                            1091-A Siler Rd, Santa Fe, NM 87507
                         </span>
                     </p>
 
@@ -59,7 +58,7 @@ const contact = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
 
-                        <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">(257) 563-7401</span>
+                        <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">+1 (505)-795-5927</span>
                     </p>
 
                     <p className="flex items-start -mx-2">
@@ -67,7 +66,7 @@ const contact = () => {
                             <path stroke-linecap="round" stroke-linejoin="round"  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
 
-                        <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">acb@example.com</span>
+                        <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">Save1HeartCPR@gmail.com</span>
                     </p>
                 </div>
 
