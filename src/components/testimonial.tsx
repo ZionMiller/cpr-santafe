@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const testimonial = () => {
 
@@ -61,7 +60,7 @@ const testimonial = () => {
             <div className="p-8 border rounded-lg dark:border-gray-700">
                 <p className="leading-loose text-gray-500 dark:text-gray-400">
                     Picture a mix of subject matter expertise, street smarts, and an energy level off the charts.  
-                    Add in a dash of manic humor and you'll have some idea of why Katrina is such a fantastic instructor.  
+                    Add in a dash of manic humor and you&apos;ll have some idea of why Katrina is such a fantastic instructor.  
                     A natural teacher who moves the class along smartly and professionally. Take any class she teaches 
                     and it will be treat.
                 </p>
@@ -77,7 +76,7 @@ const testimonial = () => {
             <div className="p-8 border rounded-lg dark:border-gray-700">
                 <p className="leading-loose text-gray-500 dark:text-gray-400">
                     Picture a mix of subject matter expertise, street smarts, and an energy level off the charts.  
-                    Add in a dash of manic humor and you'll have some idea of why Katrina is such a fantastic instructor.  
+                    Add in a dash of manic humor and you&apos;ll have some idea of why Katrina is such a fantastic instructor.  
                     A natural teacher who moves the class along smartly and professionally. Take any class she teaches 
                     and it will be treat.
                 </p>

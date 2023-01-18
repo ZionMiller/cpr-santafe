@@ -1,6 +1,5 @@
 import { useEffect, useRef }  from 'react'
 import GoogleMapReact from 'google-map-react'
-import PropTypes from 'prop-types'
 
 const footer = () => {
 
@@ -22,7 +21,7 @@ const footer = () => {
                         <a href="#" className="text-2xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">CPR Santa Fe</a>
                     </div>
 
-                    <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Learn the Power to Save Lives with CPR Santa Fe - Your Community's Lifeline</p>
+                    <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Learn the Power to Save Lives with CPR Santa Fe - Your Community&apos;s Lifeline</p>
 
                     <div className="flex mt-6 -mx-2">
                         <a href="#"

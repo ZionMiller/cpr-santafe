@@ -8,27 +8,27 @@ interface Location {
 
 const map = ({ location }: { location: Location }) => {
 
-    const mapRef = useRef(null);
+    // const mapRef = useRef(null);
     let map: google.maps.Map<Element> | undefined;
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
-    useEffect(() => {
-        if(mapRef.current){
-            const map = new google.maps.Map(mapRef.current, {
-                center: { lat: location.lat, lng: location.lng },
-                zoom: 14
-            });
-            new google.maps.Marker({
-                position: { lat: location.lat, lng: location.lng },
-                map: map
-            });
+    // useEffect(() => {
+    //     if(mapRef.current){
+    //         const map = new google.maps.Map(mapRef.current, {
+    //             center: { lat: location.lat, lng: location.lng },
+    //             zoom: 14
+    //         });
+    //         new google.maps.Marker({
+    //             position: { lat: location.lat, lng: location.lng },
+    //             map: map
+    //         });
     
-            new google.maps.InfoWindow({
-                content: location.address
-            }).open(map, mapRef.current);
-        }
-    }, [location]);
+    //         new google.maps.InfoWindow({
+    //             content: location.address
+    //         }).open(map, mapRef.current);
+    //     }
+    // }, [location]);
 
-    return <div ref={mapRef} style={{ height: '300px', width: '100%' }}></div>;
+    return <div style={{ height: '300px', width: '100%' }}><h1>map here</h1></div>;
 };

@@ -20,7 +20,7 @@ const store = () => {
 
                 <p className="mt-4 text-gray-500 dark:text-gray-300">
                 We love the HeartSine 350P/360P AEDs because they are very user-friendly: just press the on/off switch. 
-                That's it! Like all other AEDs, they have loud, clear voice prompts that guide a user through the steps 
+                That&apos;s it! Like all other AEDs, they have loud, clear voice prompts that guide a user through the steps 
                 during a rescue. But what really sets it apart is how light and portable it is. At 2.4 lbs., it is not 
                 only the lightest device but also one of the most durable and rugged. This device comes in semi-auto 
                 (350P) and fully automatic mode (360P). This device is perfect for almost any location.
@@ -55,7 +55,7 @@ const store = () => {
                     <li>
                         <span className="flex">
                             <FaCheckCircle />
-                            <p className='pl-1'>The 350P is lightweight and compact, with a weight of 2.4 lbs and dimensions of 8.0" x 7.25" x 1.9", making it the smallest AED on the US market.</p>
+                            <p className='pl-1'>The 350P is lightweight and compact, with a weight of 2.4 lbs and dimensions of 8.0 x 7.25 x 1.9, making it the smallest AED on the US market.</p>
                         </span>
                     </li>
                     <li>

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const cta = () => {
   return (
@@ -19,7 +18,7 @@ const cta = () => {
 
                     <p className="mt-4 text-gray-500 dark:text-gray-300">
                     Learn life-saving CPR skills with CPR Santa Fe. We offer the latest American Heart Association and Red Cross curriculum, 
-                    taught in a way that's easy to understand and remember. Perfect for families, businesses, schools, and organizations. 
+                    taught in a way that&apos;s easy to understand and remember. Perfect for families, businesses, schools, and organizations. 
                     Custom classes available at your location, with flexible class sizes from 5-60+, and group rates. Book the date, location, 
                     and class that works for you. All equipment and textbooks provided onsite. Check our website for new class listings every month.
                     </p>

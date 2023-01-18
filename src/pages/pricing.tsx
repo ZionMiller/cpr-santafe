@@ -13,7 +13,7 @@ const pricing = () => {
           day/ time of your choosing!
         </h1>
         <h1 className='font-medium text-white'>
-          Have a big group? <span className="text-blue-500">contact us</span> and we'd be happy to 
+          Have a big group? <span className="text-blue-500">contact us</span> and we&apos;d be happy to 
           find a pricing fit for your needs. We are also available to provide instruction onn location for you
         </h1>
       </div>
