@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const faq = () => {
+
+    const [toggle, setToggle] = useState(false)
+
+    function toggleFaq(): any { 
+        setToggle((toggle) => !toggle) 
+    }
+
   return (
     <section className="bg-white dark:bg-gray-900">
         <div className="container  py-12 mx-auto">
@@ -8,35 +15,30 @@ const faq = () => {
 
             <div className="mt-8 space-y-8 lg:mt-12">
                 <div className="p-8 bg-gray-100 rounded-lg dark:bg-gray-800">
-                    <button className="flex items-center justify-between w-full" onClick={() => {
-                        const content = document.querySelector("#content1");
-                        content?.classList.toggle("hidden");
-                    }}>
+                    <button className="flex items-center justify-between w-full" onClick={toggleFaq}>
                         <h1 className="font-semibold text-gray-700 dark:text-white">How do I know if I am taking the right class?</h1>
 
-                        <span className="text-gray-400 bg-blue-500 rounded-full">
+                        <span className={(toggle? "text-gray-400 bg-blue-500 rounded-full" : "text-gray-400 bg-gray-200 rounded-full" )}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={( toggle ? "M12 6v6m0 0v6m0-6h6m-6 0H6" : "M18 12H6")} />
                             </svg>
                         </span>
                     </button>
-
-                    <p id="content1" className="mt-6 text-sm text-gray-500 dark:text-gray-300 hidden">
-                        Contact us, and let us know what profession you are in, and we will direct you to the correct class. 
-                    </p>
+                    {!toggle && (
+                        <p id="content1" className={( toggle? "mt-6 text-sm text-gray-500 dark:text-gray-300 hidden" : "mt-6 text-sm text-gray-500 dark:text-gray-300")}>
+                            Contact us, and let us know what profession you are in, and we will direct you to the correct class. 
+                        </p>
+                    )}
                 </div>
             </div>
             <div className="mt-8 space-y-8 lg:mt-12">
                 <div className="p-8 bg-gray-100 rounded-lg dark:bg-gray-800">
-                    <button className="flex items-center justify-between w-full" onClick={() => {
-                        const content = document.querySelector("#content2");
-                        content?.classList.toggle("hidden");
-                    }}>
+                    <button className="flex items-center justify-between w-full" onClick={toggleFaq}>
                         <h1 className="font-semibold text-gray-700 dark:text-white">How long does it take to get my card?</h1>
 
-                        <span className="text-gray-400 bg-gray-200 rounded-full">
+                        <span className={(toggle? "text-gray-400 bg-blue-500 rounded-full" : "text-gray-400 bg-gray-200 rounded-full" )}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 12H6" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={( toggle ? "M12 6v6m0 0v6m0-6h6m-6 0H6" : "M18 12H6")} />
                             </svg>
                         </span>
                     </button>
@@ -54,16 +56,20 @@ const faq = () => {
                     }}>
                         <h1 className="font-semibold text-gray-700 dark:text-white">What if I want to learn CPR, but do not need a card?</h1>
 
-                        <span className="text-gray-400 bg-gray-200 rounded-full">
+                        <span className={(toggle? "text-gray-400 bg-blue-500 rounded-full" : "text-gray-400 bg-gray-200 rounded-full" )}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 12H6" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={( toggle ? "M12 6v6m0 0v6m0-6h6m-6 0H6" : "M18 12H6")} />
                             </svg>
                         </span>
                     </button>
+                    {
+                        !toggle && (
+                            <p id="content3" className="mt-6 text-sm text-gray-500 dark:text-gray-300 hidden">
+                                Absolutely, you can take the class for information only. You will not need to pay for a card.
+                            </p>
 
-                    <p id="content3" className="mt-6 text-sm text-gray-500 dark:text-gray-300 hidden">
-                        Absolutely, you can take the class for information only. You will not need to pay for a card.
-                    </p>
+                        )
+                    }
                 </div>
             </div>
         </div>

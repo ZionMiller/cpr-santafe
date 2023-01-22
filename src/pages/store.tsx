@@ -17,7 +17,6 @@ const store = () => {
                 <h2 className="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
                 HeartSine <span className="text-blue-500">350P/360P AEDs </span>
                 </h2>
-
                 <p className="mt-4 text-gray-500 dark:text-gray-300">
                 We love the HeartSine 350P/360P AEDs because they are very user-friendly: just press the on/off switch. 
                 That&apos;s it! Like all other AEDs, they have loud, clear voice prompts that guide a user through the steps 
@@ -25,6 +24,7 @@ const store = () => {
                 only the lightest device but also one of the most durable and rugged. This device comes in semi-auto 
                 (350P) and fully automatic mode (360P). This device is perfect for almost any location.
                 </p>
+
 
                 <div className="inline-flex w-full mt-6 sm:w-auto">
                     <a href="https://checkout.square.site/buy/2BINXM25AARJTMJUU2YDIP3S" className="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
@@ -34,7 +34,7 @@ const store = () => {
             </div>
         </div>
     </section>
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-gray-100 dark:bg-gray-800 lg:py-12">
             <div className="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
 
                 <h1 className="text-2xl font-semibold text-center text-gray-700 capitalize dark:text-white">Features</h1>
