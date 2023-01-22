@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 
-const faq = () => {
+const Faq = () => {
+
+    type ToggleFn = () => void;
 
     const [toggle, setToggle] = useState(false)
 
-    function toggleFaq(): any { 
+    const toggleFaq: ToggleFn = () => { 
         setToggle((toggle) => !toggle) 
     }
 
@@ -77,6 +79,6 @@ const faq = () => {
       )
     }
     
-    faq.propTypes = {}
+    Faq.propTypes = {}
     
-export default faq
+export default Faq

@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 // TODO: feedback for tab thats currently selected
 
-const navbar = () => {
+const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
 
   const toggleMenu = () : any => {
       setToggle((toggle) => !toggle);
-      let el = document.getElementById("navbar-sticky");
+      const el = document.getElementById("navbar-sticky");
       if(el) el.classList.toggle("hidden");
 
   }
@@ -62,6 +62,6 @@ const navbar = () => {
   )
 }
 
-navbar.propTypes = {}
+Navbar.propTypes = {}
 
-export default navbar
+export default Navbar

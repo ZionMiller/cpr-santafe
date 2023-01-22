@@ -7,7 +7,7 @@ const cta = () => {
             <div className="bg-white dark:bg-gray-900 lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
                 <div className="lg:w-1/2">
                     <div className="h-64 lg:h-full" >
-                        <img src="./images/cpr-santa-fe-cta2.jpg"/>
+                        <img src="./images/cpr-santa-fe-cta2.jpg" alt="CPR Santa Fe team"/>
                     </div>
                 </div>
 
