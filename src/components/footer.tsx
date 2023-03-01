@@ -12,6 +12,8 @@ const footer = () => {
   };
 
   return (
+    <div>
+
     <footer className="bg-white dark:bg-gray-900">
     <div className="container p-6 mx-auto">
         <div className="lg:flex">
@@ -89,6 +91,7 @@ const footer = () => {
         </div>
     </div>
 </footer>
+    </div>
   )
 }
 
