@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 
 const contact = () => {
 
-    const form = useRef<HTMLFormElement | undefined>();
+    const form = useRef<HTMLFormElement>(null);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
