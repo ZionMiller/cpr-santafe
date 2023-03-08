@@ -1,14 +1,25 @@
 import {useRef} from 'react'
-import PropTypes from 'prop-types'
+import emailjs from '@emailjs/browser';
 
-// TODO: Connnect backend to support form submission
+// TODO: message and other info not displaying on email.js
 
 const contact = () => {
 
-    const form = useRef<HTMLDivElement>(null);
+    const form = useRef<HTMLFormElement | undefined>();
 
-    const sendEmail = () => {
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
+        const formCurrent = e.target as HTMLFormElement;
+
+            emailjs.sendForm('service_pxj4l7e', 'template_uzd0m1g', formCurrent, 'DUyu1i82Vw7Wky9_z')
+              .then((result) => {
+                  console.log(result.text);
+              }, (error) => {
+                  console.log(error.text);
+              });
+          (e.target as HTMLFormElement).reset();    
+        
     }
 
   return (
@@ -102,7 +113,7 @@ const contact = () => {
                 We would love to hear from you!
               </p>
 
-              <form className="mt-12" ref={form} onSubmit={sendEmail}>
+              <form className="mt-12" ref={form} onSubmit={sendEmail} id="contact-form">
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
@@ -112,6 +123,7 @@ const contact = () => {
                       type="text"
                       placeholder="John Doe"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      data-name="full_name"
                     />
                   </div>
 
@@ -123,6 +135,7 @@ const contact = () => {
                       type="email"
                       placeholder="johndoe@example.com"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    data-name="use_email"
                     />
                   </div>
                 </div>
@@ -134,6 +147,7 @@ const contact = () => {
                   <textarea
                     className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
+                    data-name="message"
                   ></textarea>
                 </div>
 
