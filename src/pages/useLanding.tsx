@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Pricing from '../components/pricing';
 import Schedule from '../components/schedule';
 
-const schedLanding = () => {
+const useLanding = () => {
   const [selectedOption, setSelectedOption] = useState<string | undefined>('schedule')
 
   const handleChange = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -71,6 +71,6 @@ const schedLanding = () => {
   );
 }
 
-schedLanding.propTypes = {}
+useLanding.propTypes = {}
 
-export default schedLanding
+export default useLanding

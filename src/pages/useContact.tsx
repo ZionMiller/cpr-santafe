@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 // TODO: message and other info not displaying on email.js
 
-const contact = () => {
+const useContact = () => {
 
     const form = useRef<HTMLFormElement>(null);
 
@@ -113,7 +113,7 @@ const contact = () => {
                 We would love to hear from you!
               </p>
 
-              <form className="mt-12" ref={form} onSubmit={sendEmail} id="contact-form">
+              <form className="mt-12" ref={form} onSubmit={sendEmail} id="useContact-form">
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
@@ -163,9 +163,9 @@ const contact = () => {
   );
 }
 
-contact.propTypes = {};
+useContact.propTypes = {};
 
-export default contact
+export default useContact
 
 
 

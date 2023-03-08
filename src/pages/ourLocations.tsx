@@ -11,7 +11,7 @@ const ourLocations = () => {
         Santa Fe, Albuquerque, Las Vegas, Los Alamos
       </p>
       <h4 className="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
-        Don't See Your City Listed?<span className="text-blue-500"> Contact Us!</span>
+        Don&apos;t See Your City Listed?<span className="text-blue-500"> Contact Us!</span>
       </h4>
       <div className="inline-flex w-full mt-6 sm:w-auto">
         <a
