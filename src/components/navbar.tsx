@@ -2,22 +2,40 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 
 // TODO: feedback for tab thats currently selected
+interface NavState {
+  activeItem: string;
+}
 
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
+  const [selectedMenu, setSelectedMenu] = useState<NavState>({activeItem: 'home'})
+
+  function handleSelection(itemName: string) {
+    setSelectedMenu({ activeItem: itemName })
+  }
 
   const toggleMenu = () : any => {
       setToggle((toggle) => !toggle);
       const el = document.getElementById("navbar-sticky");
       if(el) el.classList.toggle("hidden");
+  }
 
+  const styleNav = {
+    backgroundColor: "#ded8ee",
+    color: "black",
+    width: "100%",
+  }
+  
+  const activeStyle = {
+    backgroundColor: "#e8eed8",
+    color: "white",
   }
 
   return (
     <nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900  w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-      <Link href="/" className="flex items-center">
+      <Link href="/" className="flex items-center" >
           <img src="./images/cpr-santafe-logo.png" className="h-12 mr-3 sm:h-9" alt="Flowbite Logo"/>
       </Link>
       <div className="flex md:order-2">
@@ -40,14 +58,19 @@ const Navbar = () => {
               <a className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">HOME</a>
             </li>
           </Link>
+          <Link href="/ourLocations">
+            <li>
+              <a className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">LOCATIONS</a>
+            </li>
+          </Link>
           <Link href="/about">
             <li>
               <a className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ABOUT</a>
             </li>
           </Link>
-          <Link href="/pricing">
+          <Link href="/schedLanding">
             <li>
-              <a className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PRICING</a>
+              <a className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CLASSES</a>
             </li>
           </Link>
           <Link href="/store">
