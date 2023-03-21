@@ -10,9 +10,9 @@ const ourLocations = () => {
       <p className="mt-4 text-gray-500 dark:text-gray-300">
         Santa Fe, Albuquerque, Las Vegas, Los Alamos
       </p>
-      <h4 className="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
+      <p className="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
         Don&apos;t See Your City Listed?<span className="text-blue-500"> Contact Us!</span>
-      </h4>
+      </p>
       <div className="inline-flex w-full mt-6 sm:w-auto">
         <a
           href="https://checkout.square.site/buy/2BINXM25AARJTMJUU2YDIP3S"

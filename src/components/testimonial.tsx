@@ -73,21 +73,6 @@ const testimonial = () => {
                 </div>
             </div>
 
-            <div className="p-8 border rounded-lg dark:border-gray-700">
-                <p className="leading-loose text-gray-500 dark:text-gray-400">
-                    Picture a mix of subject matter expertise, street smarts, and an energy level off the charts.  
-                    Add in a dash of manic humor and you&apos;ll have some idea of why Katrina is such a fantastic instructor.  
-                    A natural teacher who moves the class along smartly and professionally. Take any class she teaches 
-                    and it will be treat.
-                </p>
-
-                <div className="flex items-center mt-8 -mx-2">
-                    <div className="mx-2">
-                        <h1 className="font-semibold text-gray-800 dark:text-white">The Wild Hare</h1>
-                        <span className="text-sm text-gray-500">{reviews}</span>
-                    </div>
-                </div>
-            </div>
         </section>
     </div>
   )

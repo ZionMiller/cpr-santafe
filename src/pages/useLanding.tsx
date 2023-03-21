@@ -63,7 +63,7 @@ const useLanding = () => {
           </div>
         </div>
       </div>
-      <div className="pt-8">
+      <div className="">
         <div className="news-content">{displaySchedule()}</div>
         <div className="news-content">{discplayPricing()}</div>
       </div>
