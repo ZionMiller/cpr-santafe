@@ -28,7 +28,7 @@ const pricing = () => {
 
                     <div className="flex-shrink-0">
                         <span className="pt-2 text-4xl font-bold text-gray-800 uppercase dark:text-gray-100">
-                            $58
+                            $60
                         </span>
                     </div>
 

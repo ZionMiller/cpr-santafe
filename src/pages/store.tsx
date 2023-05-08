@@ -15,10 +15,10 @@ const store = () => {
 
             <div className="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
                 <h2 className="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
-                HeartSine <span className="text-blue-500">350P/360P AEDs </span>
+                HeartSine <span className="text-blue-500">350P AEDs</span>
                 </h2>
                 <p className="mt-4 text-gray-500 dark:text-gray-300">
-                We love the HeartSine 350P/360P AEDs because they are very user-friendly: just press the on/off switch. 
+                We love the HeartSine AEDs because they are very user-friendly: just press the on/off switch. 
                 That&apos;s it! Like all other AEDs, they have loud, clear voice prompts that guide a user through the steps 
                 during a rescue. But what really sets it apart is how light and portable it is. At 2.4 lbs., it is not 
                 only the lightest device but also one of the most durable and rugged. This device comes in semi-auto 
