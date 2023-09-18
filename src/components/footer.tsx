@@ -82,7 +82,7 @@ const footer = () => {
                   <h3 className="text-gray-700 uppercase dark:text-white">
                     Find us here!
                   </h3>
-                  <a
+                  {/* <a
                     // href="#"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
@@ -99,7 +99,7 @@ const footer = () => {
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     Maps widget
-                  </a>
+                  </a> */}
                 </div>
                 <div>
                   <h3 className="text-gray-700 uppercase dark:text-white">

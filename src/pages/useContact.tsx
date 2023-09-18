@@ -110,7 +110,7 @@ const useContact = () => {
               </h1>
 
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                We would love to hear from you! Please note, we have been having issues with our contact form. If we don't respond quickly, please send a message to Save1HeartCPR@gmail.com or give us a call at                     +1 (505)-795-5927
+                We would love to hear from you! Please note, we have been having issues with our contact form. If we don&apos;t respond quickly, please send a message to Save1HeartCPR@gmail.com or give us a call at                     +1 (505)-795-5927
 
 
               </p>
