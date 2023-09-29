@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import Pricing from '../components/pricing';
-import Schedule from '../components/Schedule';
+import Schedule from '../components/schedule';
 
 const useLanding = () => {
   const [selectedOption, setSelectedOption] = useState<string | undefined>('schedule')

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { InlineWidget } from "react-calendly";
 
 // const sheet-id = process.env.SHEET-ID
 // const JSON = process.env.JSON
