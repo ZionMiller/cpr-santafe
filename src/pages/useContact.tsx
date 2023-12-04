@@ -57,7 +57,7 @@ const useContact = () => {
                   </svg>
 
                   <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
-                    1091-A Siler Rd, Santa Fe, NM 87507
+                    2047, Galisteo Street, Santa Fe, NM
                   </span>
                 </div>
 
