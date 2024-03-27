@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link";
 
 const cta = () => {
   return (
@@ -24,9 +25,17 @@ const cta = () => {
                     </p>
 
                     <div className="inline-flex w-full mt-6 sm:w-auto">
-                        <a href="./pricing" className="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                        <Link href="pricing">
+                        <a className="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                             View Pricing 
                         </a>
+                        </Link>
+                    </div>
+                    <div className="inline-flex w-full mt-6 sm:w-auto">
+                        <Link href="Contact">
+                        <a className="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+Contact                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
