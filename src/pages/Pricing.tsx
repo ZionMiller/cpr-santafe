@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const pricing = () => {
+const Pricing = () => {
   return (
     <div className="bg-white dark:bg-gray-900">
       <div className='p-8 space-y-3 rounded-xl'>
@@ -267,6 +267,6 @@ const pricing = () => {
   )
 }
 
-pricing.propTypes = {}
+Pricing.propTypes = {}
 
-export default pricing
+export default Pricing

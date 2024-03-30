@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link";
 
 const cta = () => {
   return (
@@ -22,11 +23,15 @@ const cta = () => {
                     Custom classes available at your location, with flexible class sizes from 5-60+, and group rates. Book the date, location, 
                     and class that works for you. All equipment and textbooks provided onsite. Check our website for new class listings every month.
                     </p>
-
                     <div className="inline-flex w-full mt-6 sm:w-auto">
-                        <a href="./pricing" className="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                            View Pricing 
-                        </a>
+                    <Link href="/Pricing">
+                        <button
+                        type="button"
+                        className="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
+                        >
+                        View Pricing
+                        </button>
+                    </Link>
                     </div>
                 </div>
             </div>
