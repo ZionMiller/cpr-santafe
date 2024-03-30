@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Pricing from './pricing';
+import Pricing from './Pricing';
 import Schedule from '../components/schedule';
 
 const useLanding = () => {
