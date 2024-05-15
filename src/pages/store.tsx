@@ -97,7 +97,7 @@ const store = () => {
                     <li>
                         <span className="flex">
                             <FaCheckCircle />
-                            <p className='pl-1'>The price of Heartsine 350P is 1,275.00 and it includes training.</p>
+                            <p className='pl-1'>The price of Heartsine 350P is 1,450 and it includes training.</p>
                         </span>
                     </li>         
                 </ul>
